@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Ticket</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    .ticket {
+        max-width: 500px;
+        margin: 20px auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+    .ticket-header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: center;
+    }
+    .ticket-body {
+        padding: 20px;
+    }
+    .ticket-body h2 {
+        margin-top: 0;
+        color: #007bff;
+    }
+    .ticket-body p {
+        margin: 10px 0;
+        color: #444;
+    }
+    .ticket-footer {
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+        background-color: #0056b3;
+    }
+    .barcode {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .barcode img {
+        width: 200px;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <div class="ticket">
+        <div class="ticket-header">
+            <h1>Flight Ticket</h1>
+        </div>
+        <div class="ticket-body">
+            <h2>Passenger Information</h2>
+            <p><strong>Name:</strong> {{passenger}}</p>
+            <p><strong>Flight Number:</strong> {{flight_number}}</p>
+            <p><strong>Date:</strong> 2024-04-07</p>
+            <p><strong>Departure Time:</strong> 10:00 AM</p>
+            <p><strong>Arrival Time:</strong> 12:00 PM</p>
+            <h2>Seat Information</h2>
+            <p><strong>Seat Number:</strong> {{seat_number}}</p>
+            <p><strong>Class:</strong> Economy</p>
+            <h2>Flight Details</h2>
+            <p><strong>From:</strong> New York (JFK)</p>
+            <p><strong>To:</strong> London (LHR)</p>
+            <p><strong>Gate:</strong> 12</p>
+        </div>
+    </div>
+</body>
+</html>
